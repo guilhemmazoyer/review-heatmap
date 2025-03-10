@@ -341,7 +341,7 @@ access to many exclusive add-ons!</string>
         </spacer>
        </item>
        <item>
-        <widget class="QGroupBox" name="groupBox">
+        <widget class="QGroupBox" name="groupBox_1">
          <property name="title">
           <string>Heatmap appearance</string>
          </property>
@@ -388,7 +388,7 @@ access to many exclusive add-ons!</string>
         </widget>
        </item>
        <item>
-        <widget class="QGroupBox" name="groupBox_3">
+        <widget class="QGroupBox" name="groupBox_2">
          <property name="title">
           <string>Heatmap visibility</string>
          </property>
@@ -427,6 +427,65 @@ access to many exclusive add-ons!</string>
         </widget>
        </item>
        <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>Heatmap stats visibility</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QCheckBox" name="dailyAverage">
+            <property name="toolTip">
+             <string>Toggle the visibility of the Daily Average cards review stat</string>
+            </property>
+            <property name="text">
+             <string>Daily average</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="daysLearned_percent">
+            <property name="toolTip">
+             <string>Toggle the visibility of the Days learned percent stat</string>
+            </property>
+            <property name="text">
+             <string>Days learned</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="daysLearned_number">
+            <property name="toolTip">
+             <string>Toggle the visibility of the Days learned number stat</string>
+            </property>
+            <property name="text">
+             <string>Days learned</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="longestStreak">
+            <property name="toolTip">
+             <string>Toggle the visibility of the Longest Streak stat</string>
+            </property>
+            <property name="text">
+             <string>Longest streak</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="currentStreak">
+            <property name="toolTip">
+             <string>Toggle the visibility of the Current Streak stat</string>
+            </property>
+            <property name="text">
+             <string>Current streak</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
         <widget class="QGroupBox" name="groupBox_4">
          <property name="title">
           <string>Streak visibility</string>
@@ -438,7 +497,7 @@ access to many exclusive add-ons!</string>
              <string>&lt;html&gt;Overrides the heatmap visibility setting, always showing you information on your stats (e.g. streaks, average, etc.)&lt;/html&gt;</string>
             </property>
             <property name="text">
-             <string>Show streak &amp;stats even when heatmap disabled</string>
+             <string>Show &amp;stats even when heatmap disabled</string>
             </property>
            </widget>
           </item>
