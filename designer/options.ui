@@ -20,7 +20,7 @@
         <string>Review Heatmap Settings</string>
        </property>
        <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
        </property>
        <property name="margin">
         <number>0</number>
@@ -39,7 +39,7 @@
         </size>
        </property>
        <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
+        <enum>Qt::FocusPolicy::NoFocus</enum>
        </property>
        <property name="toolTip">
         <string>&lt;html&gt;Please leave a thumbs-up if you've enjoyed this add-on&lt;/html&gt;</string>
@@ -56,7 +56,7 @@
      <item>
       <widget class="QToolButton" name="btnTwitter">
        <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
+        <enum>Qt::FocusPolicy::NoFocus</enum>
        </property>
        <property name="toolTip">
         <string>&lt;html&gt;Follow me on Twitter for &lt;br&gt;updates on add-on releases and news on Anki in general!&lt;/html&gt;</string>
@@ -73,7 +73,7 @@
      <item>
       <widget class="QToolButton" name="btnYoutube">
        <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
+        <enum>Qt::FocusPolicy::NoFocus</enum>
        </property>
        <property name="toolTip">
         <string>&lt;html&gt;Check out my YouTube channel for&lt;br&gt;helpful tutorials on this add-on and more&lt;/html&gt;</string>
@@ -102,7 +102,7 @@
         </size>
        </property>
        <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
+        <enum>Qt::FocusPolicy::NoFocus</enum>
        </property>
        <property name="toolTip">
         <string>&lt;html&gt;Invoke the wiki page, add-on description, or manual&lt;/html&gt;</string>
@@ -118,10 +118,10 @@
         <string>Ctrl+H</string>
        </property>
        <property name="popupMode">
-        <enum>QToolButton::DelayedPopup</enum>
+        <enum>QToolButton::ToolButtonPopupMode::DelayedPopup</enum>
        </property>
        <property name="arrowType">
-        <enum>Qt::NoArrow</enum>
+        <enum>Qt::ArrowType::NoArrow</enum>
        </property>
       </widget>
      </item>
@@ -139,7 +139,7 @@
      <item>
       <spacer name="horizontalSpacer_3">
        <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+        <enum>Qt::Orientation::Horizontal</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
@@ -160,7 +160,7 @@
         <string>&lt;a href=&quot;action://changelog&quot;&gt;v{ADDON_VERSION}&lt;/a&gt;</string>
        </property>
        <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
        </property>
        <property name="margin">
         <number>2</number>
@@ -192,7 +192,7 @@
            <item>
             <spacer name="horizontalSpacer_5">
              <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+              <enum>Qt::Orientation::Horizontal</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -211,7 +211,7 @@
               <pixmap resource="../resources/icons.qrc">:/review_heatmap/icons/heart.svg</pixmap>
              </property>
              <property name="alignment">
-              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
              </property>
             </widget>
            </item>
@@ -227,14 +227,14 @@
               <string>Review Heatmap?</string>
              </property>
              <property name="alignment">
-              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
              </property>
             </widget>
            </item>
            <item>
             <spacer name="horizontalSpacer_4">
              <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+              <enum>Qt::Orientation::Horizontal</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -254,10 +254,10 @@
            <item row="0" column="0">
             <spacer name="horizontalSpacer_2">
              <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+              <enum>Qt::Orientation::Horizontal</enum>
              </property>
              <property name="sizeType">
-              <enum>QSizePolicy::Minimum</enum>
+              <enum>QSizePolicy::Policy::Minimum</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -270,10 +270,10 @@
            <item row="0" column="3">
             <spacer name="horizontalSpacer">
              <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+              <enum>Qt::Orientation::Horizontal</enum>
              </property>
              <property name="sizeType">
-              <enum>QSizePolicy::Minimum</enum>
+              <enum>QSizePolicy::Policy::Minimum</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -286,7 +286,7 @@
            <item row="0" column="1">
             <widget class="QPushButton" name="btnPatreon">
              <property name="focusPolicy">
-              <enum>Qt::NoFocus</enum>
+              <enum>Qt::FocusPolicy::NoFocus</enum>
              </property>
              <property name="toolTip">
               <string>Perks include access to Patron-only add-ons, &lt;br&gt;exclusive blog posts, mentions in the credits, and more!</string>
@@ -318,7 +318,7 @@ access to many exclusive add-ons!</string>
             <pixmap resource="../resources/icons.qrc">:/review_heatmap/icons/thanks.svg</pixmap>
            </property>
            <property name="alignment">
-            <set>Qt::AlignCenter</set>
+            <set>Qt::AlignmentFlag::AlignCenter</set>
            </property>
           </widget>
          </item>
@@ -327,7 +327,7 @@ access to many exclusive add-ons!</string>
        <item>
         <spacer name="verticalSpacer_5">
          <property name="orientation">
-          <enum>Qt::Vertical</enum>
+          <enum>Qt::Orientation::Vertical</enum>
          </property>
          <property name="sizeType">
           <enum>QSizePolicy::Minimum</enum>
@@ -507,7 +507,7 @@ access to many exclusive add-ons!</string>
        <item>
         <spacer name="verticalSpacer_2">
          <property name="orientation">
-          <enum>Qt::Vertical</enum>
+          <enum>Qt::Orientation::Vertical</enum>
          </property>
          <property name="sizeType">
           <enum>QSizePolicy::Minimum</enum>
@@ -535,7 +535,7 @@ access to many exclusive add-ons!</string>
             <string>&lt;html&gt;Limits the number of days in the future that the heatmap displays. Only applies to main screen and deck overview.&lt;/html&gt;</string>
            </property>
            <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
            </property>
            <property name="specialValueText">
             <string>No limit</string>
@@ -590,7 +590,7 @@ access to many exclusive add-ons!</string>
             <string>&lt;html&gt;Allows you to exclude a period of time from your stats (e.g. when you were still getting familiar with Anki).&lt;br&gt;Only applies to main screen and deck overview.&lt;/html&gt;</string>
            </property>
            <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
            </property>
            <property name="minimumDate">
             <date>
@@ -610,7 +610,7 @@ access to many exclusive add-ons!</string>
             <string>&lt;html&gt;Limits the number of days in the past that the heatmap displays. Only applies to main screen and deck overview.&lt;/html&gt;</string>
            </property>
            <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
            </property>
            <property name="specialValueText">
             <string>No limit</string>
@@ -648,7 +648,7 @@ access to many exclusive add-ons!</string>
        <item>
         <spacer name="verticalSpacer_6">
          <property name="orientation">
-          <enum>Qt::Vertical</enum>
+          <enum>Qt::Orientation::Vertical</enum>
          </property>
          <property name="sizeType">
           <enum>QSizePolicy::Minimum</enum>
@@ -673,7 +673,7 @@ access to many exclusive add-ons!</string>
              <string>&lt;html&gt;Any decks listed here will not be included in the calculations for the main heatmap. Each individual deck's heatmap will still work, however.&lt;/html&gt;</string>
             </property>
             <property name="selectionMode">
-             <enum>QAbstractItemView::ExtendedSelection</enum>
+             <enum>QAbstractItemView::SelectionMode::ExtendedSelection</enum>
             </property>
             <property name="sortingEnabled">
              <bool>true</bool>
@@ -737,7 +737,7 @@ access to many exclusive add-ons!</string>
             <item>
              <spacer name="verticalSpacer">
               <property name="orientation">
-               <enum>Qt::Vertical</enum>
+               <enum>Qt::Orientation::Vertical</enum>
               </property>
               <property name="sizeHint" stdset="0">
                <size>
@@ -776,10 +776,10 @@ access to many exclusive add-ons!</string>
    <item>
     <widget class="QDialogButtonBox" name="buttonBox">
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
      <property name="standardButtons">
-      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok|QDialogButtonBox::RestoreDefaults</set>
+      <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok|QDialogButtonBox::StandardButton::RestoreDefaults</set>
      </property>
     </widget>
    </item>
